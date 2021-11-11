@@ -180,7 +180,7 @@ export default function ProjectTwo() {
         </div>
 
         <div className='large2-figure-img'>
-          <img src='work-2/16.jpeg' alt='' />
+          <img src='work-2/16.jpg' alt='' />
         </div>
 
         <div className='last-card-grid'>
@@ -245,12 +245,6 @@ export default function ProjectTwo() {
 
         <div className='next-btn'>
           <div className='next-link'>
-            <Link
-              to='/jorge-investment'
-              cssclass='next-link'
-              className='next-link'>
-              <img className='next-arrow prev' src='arrow.svg' alt='' />
-            </Link>
             Next Project
             <Link to='/redxam' cssclass='next-link' className='next-link'>
               <img className='next-arrow' src='arrow.svg' alt='' />

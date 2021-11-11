@@ -101,32 +101,12 @@ export default function ProjectOne({ navBar }) {
             <div className='t'>
               <img src='Crypto/4.jpg' alt='' />
             </div>
-            <div className='t'>
+            <div className='t last'>
               <img src='Crypto/6.jpg' alt='' />
             </div>
           </div>
         </div>
 
-        <div className='abt-project probs'>
-          <h2>Problem statements</h2>
-          <ol>
-            <li>
-              NEW ARTISTS FIND IT HARD TO GROW AS THEY STRUGGLE TO GAIN EXPOSURE
-              AS THEIR MUSIC WHEN THEIR MUSIC IS SAMPLED WITH NO CREDIT OR
-              FINANCIAL KICKBACK ON PLATFORMS SUCH AS SOUNDCLOUD AND YOUTUBE.
-            </li>
-            <li>
-              NDEPENDENT ARTISTS HAVE THEIR CREATIVITY STIFLED BY FEAR OF BIG
-              LABELS THREATENING LEGAL ACTION FOR SAMPLING THEIR SONGS WHEN THE
-              LABELS SAMPLE SMALLER ARTISTS ALL THE TIME.
-            </li>
-            <li>
-              ISING ARTISTS NEED HELP WITH SELLING MERCHANDISE AND ORGANISING
-              TOURS BUT ARE SCARED OF GETTING LOCKED INTO BAD CONTRACTS WITH
-              LABELS THAT HAVE LOW STREAMING ROYALTIES THEY WILL OUTGROW.
-            </li>
-          </ol>
-        </div>
         <div className='abt-project probs'>
           <h2>Problem statements</h2>
           <ol>
@@ -225,10 +205,10 @@ export default function ProjectOne({ navBar }) {
         <div className='last-card-grid'>
           <div className='last-flex-one'>
             <div className='l-one'>
-              <img src='Crypto/17.jpg' alt='' />
+              <img src='Crypto/23.jpg' alt='' />
             </div>
             <div className='l-two'>
-              <img src='Crypto/19.jpg' alt='' />
+              <img src='Crypto/25.jpg' alt='' />
             </div>
             <div className='l-three'>
               <img src='Crypto/21.jpg' alt='' />
@@ -236,10 +216,10 @@ export default function ProjectOne({ navBar }) {
           </div>
           <div className='last-flex-two'>
             <div className='l-one'>
-              <img src='Crypto/18.jpg' alt='' />
+              <img src='Crypto/22.jpg' alt='' />
             </div>
             <div className='l-two'>
-              <img src='Crypto/20.jpg' alt='' />
+              <img src='Crypto/24.jpg' alt='' />
             </div>
           </div>
         </div>

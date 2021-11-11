@@ -37,7 +37,7 @@
       height: 400px;
     }
     @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
-      height: 210px;
+      height: 260px;
     }
 
     img {
@@ -125,7 +125,7 @@
     }
     @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
       flex-direction: column;
-      padding: 10px 20px 180px 20px;
+      padding: 10px 25px 180px 25px;
     }
     h2 {
       width: 100px;
@@ -133,6 +133,7 @@
       @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
         width: 200px;
         font-size: 28px;
+        padding: 0 10px;
       }
     }
     p {
@@ -148,6 +149,7 @@
         font-size: $pm;
         line-height: 160%;
         margin-top: 50px;
+        padding: 0 0 0 8px;
       }
     }
     ol {
@@ -200,6 +202,7 @@
       }
       @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
         font-size: $pm;
+        padding: 0 0 0 8px;
       }
     }
   }
@@ -211,10 +214,10 @@
     justify-content: space-between;
     @media screen and (max-width: 768px) {
       flex-direction: column;
-      padding: 100px 100px;
+      // padding: 100px 100px;
     }
     @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
-      padding: 80px 20px;
+      padding: 80px 20px 40px 20px;
     }
 
     .i-card-one {
@@ -227,12 +230,24 @@
         width: 100%;
         height: 750px;
         background-color: $gray;
+
+        @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+          max-width: 340px;
+          height: 500px;
+          margin: 0 auto;
+        }
       }
 
       .s {
         margin-top: 100px;
         position: relative;
         height: 500px;
+
+        @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+          max-width: 340px;
+          height: 340px;
+          margin: 100px auto 0 auto;
+        }
 
         &::after {
           content: "The illustration style went through several phases and multiple iterations.";
@@ -245,6 +260,11 @@
           padding: 0 40px;
           text-align: center;
           font-size: $pd;
+
+          @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+            font-size: 14px;
+            line-height: 160%;
+          }
         }
       }
 
@@ -253,6 +273,12 @@
         height: 750px;
         background-color: $gray;
         margin-top: 150px;
+
+        @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+          max-width: 340px;
+          height: 500px;
+          margin: 150px auto 0 auto;
+        }
       }
     }
 
@@ -263,13 +289,29 @@
       @media screen and (max-width: 768px) {
         width: 100%;
       }
+      @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+        margin-top: 0;
+      }
 
       .t {
         width: 100%;
         height: 750px;
         background-color: $gray;
         margin-top: 150px;
+
+        @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+          max-width: 340px;
+          height: 500px;
+          margin: 100px auto 0 auto;
+        }
       }
+      // .last {
+      //   // @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+      //   //   max-width: 340px;
+      //   //   height: 500px;
+      //   //   margin: 0 auto;
+      //   // }
+      // }
     }
   }
 
@@ -308,7 +350,7 @@
       padding: 100px 100px 100px 60px;
     }
     @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
-      padding: 100px 20px 100px 20px;
+      padding: 0px 25px 40px 25px;
     }
     h2 {
       font-size: 65px;
@@ -342,6 +384,7 @@
     margin: 0 auto;
     padding-top: 250px;
     padding-bottom: 100px;
+    background-color: red;
 
     h3 {
       font-size: 34px;
@@ -452,6 +495,10 @@
     margin: 0 auto;
     padding-top: 200px;
 
+    @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+      padding-top: 150px;
+      padding-bottom: 10px;
+    }
     .d-title {
       width: 80%;
 
@@ -482,6 +529,10 @@
         flex-direction: column;
       }
 
+      @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+        margin-top: 0;
+      }
+
       .flex-one {
         width: 45%;
         margin-top: 250px;
@@ -497,7 +548,9 @@
           position: relative;
 
           @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
-            height: 345px;
+            height: 500px;
+            max-width: 340px;
+            margin: 0 auto;
           }
         }
         .d-img-two {
@@ -509,6 +562,8 @@
 
           @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
             height: 345px;
+            max-width: 340px;
+            margin: 100px auto 0 auto;
           }
         }
         .d-img-three {
@@ -516,10 +571,6 @@
           height: 450px;
           background-color: $gray;
           margin-top: 150px;
-
-          @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
-            height: 260px;
-          }
         }
       }
       .flex-two {
@@ -533,6 +584,12 @@
           height: 700px;
           background-color: $gray;
           position: relative;
+
+          @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+            height: 500px;
+            max-width: 340px;
+            margin: 100px auto;
+          }
           &::after {
             content: "After making the appropriate adjustments based on user test results, it's time to deliver the solution with branding and high-fidelity rendering.";
             position: absolute;
@@ -561,7 +618,9 @@
           background-color: $gray;
           margin-top: 200px;
           @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
-            height: 450px;
+            height: 500px;
+            max-width: 340px;
+            margin: 200px auto 0 auto;
           }
         }
       }
@@ -598,8 +657,9 @@
       height: 450px;
     }
     @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
-      height: 190px;
+      height: 240px;
       width: 90%;
+      max-width: 375px;
       margin: 150px auto;
     }
   }
@@ -616,6 +676,7 @@
     }
     @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
       padding-top: 100px;
+      padding-bottom: 0;
     }
 
     .last-flex-one,
@@ -633,7 +694,9 @@
         background-color: $gray;
 
         @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
-          height: 690px;
+          height: 510px;
+          max-width: 340px;
+          margin: 0px auto;
         }
       }
       .l-two {
@@ -642,7 +705,9 @@
         background-color: $gray;
         margin-top: 100px;
         @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
-          height: 300px;
+          height: 500px;
+          max-width: 340px;
+          margin: 100px auto;
         }
       }
       .l-three {
@@ -651,18 +716,26 @@
         background-color: $gray;
         margin-top: 100px;
         @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
-          height: 700px;
+          height: 340px;
+          max-width: 340px;
+          margin: 100px auto 0 auto;
         }
       }
     }
     .last-flex-two {
       margin-top: 300px;
+
+      @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+        margin-top: 0;
+      }
       .l-one {
         width: 100%;
         height: 750px;
         background-color: $gray;
         @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
-          height: 450px;
+          height: 500px;
+          max-width: 340px;
+          margin: 100px auto;
         }
       }
       .l-two {
@@ -671,7 +744,9 @@
         background-color: $gray;
         margin-top: 100px;
         @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
-          height: 450px;
+          height: 500px;
+          max-width: 340px;
+          margin: 100px auto;
         }
       }
       .l-three {
@@ -680,7 +755,9 @@
         background-color: $gray;
         margin-top: 100px;
         @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
-          height: 210px;
+          height: 500px;
+          max-width: 340px;
+          margin: 100px auto;
         }
       }
       .l-four {
@@ -701,7 +778,7 @@
     margin: 0 auto;
 
     @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
-      width: 90%;
+      width: 82%;
     }
 
     .outcome-title {
@@ -713,7 +790,7 @@
           width: 80%;
         }
         @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
-          font-size: 34px;
+          font-size: 22px;
           width: 100%;
         }
       }
