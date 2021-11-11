@@ -1,9 +1,10 @@
 import { React, useState } from "react"
 import Links from "../Header/Links"
 import star from "../../images/last_star.png"
-export default function Footer() {
+import useLocoScroll from "../../context/useLocoScroll"
+export default function Footer({ navBar }) {
   const [inputValue, setInputValue] = useState()
-
+  useLocoScroll(navBar)
   const updateField = e => {
     setInputValue(e.target.value)
   }
@@ -19,11 +20,11 @@ export default function Footer() {
               <Links
                 name={"dosamarvis@gmail.com"}
                 route='/'
-                cssClass='m-link'
+                cssclass='m-link'
               />
-              <Links name={"Linkedin"} route='/' cssClass='m-link' />
-              <Links name={"Dribbble"} route='/' cssClass='m-link' />
-              <Links name={"Instagram"} route='/' cssClass='m-link' />
+              <Links name={"Linkedin"} route='/' cssclass='m-link' />
+              <Links name={"Dribbble"} route='/' cssclass='m-link' />
+              <Links name={"Instagram"} route='/' cssclass='m-link' />
             </div>
             <form action='#' method='post'>
               <input
@@ -43,14 +44,14 @@ export default function Footer() {
               magically developed by Sunday Ogbonna.
             </div>
             <div className='star'>
-              <img src={star} alt='' srcset='' />
+              <img src={star} alt='' srcSet='' />
             </div>
           </div>
         </div>
         <div className='foot-bottom'>
           <div className='marvis'>marvisportfolio.2020</div>
           <div className='privacy'>
-            <Links name={"privacy policy"} route='/' cssClass='m-link' />
+            <Links name={"privacy policy"} route='/' cssclass='m-link' />
           </div>
         </div>
       </footer>

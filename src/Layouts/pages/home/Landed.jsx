@@ -38,12 +38,12 @@ const captionVariant = {
     transition: { duration: 0.8 },
   },
 }
-const descriptionVariant = {
-  hidden: {
-    opacity: 0,
-    y: 150,
-  },
-}
+// const descriptionVariant = {
+//   hidden: {
+//     opacity: 0,
+//     y: 150,
+//   },
+// }
 export default function Landed() {
   return (
     <>
@@ -52,6 +52,7 @@ export default function Landed() {
         initial='hidden'
         animate='visible'
         exit='exit'
+        data-scroll
         className='landed'>
         <div className='caption'>
           <motion.h1 variants={captionVariant}>

@@ -13,21 +13,21 @@ export default function SelectedFlex() {
           <Cards
             route='/jorge-investment'
             src={imageFour}
-            cssClassName='work-card'
+            cssclassName='work-card'
             h3='Jorge investment IOS app'
             para='TRM is an enterprise SaaS solution that automates loan recoveries and communications within finance institutions.'
           />
           <Cards
             route='/bella-food'
             src={imageOne}
-            cssClassName='work-card'
+            cssclassName='work-card'
             h3='Bella Foods MObile app'
             para='TRM is an enterprise SaaS solution that automates loan recoveries and communications within finance institutions.'
           />
           <Cards
             route='/coming-soon'
             src={imageThree}
-            cssClassName='work-card'
+            cssclassName='work-card'
             h3='Estate management system'
             para='TRM is an enterprise SaaS solution that automates loan recoveries and communications within finance institutions.'
           />
@@ -36,14 +36,14 @@ export default function SelectedFlex() {
           <Cards
             route='/redxam'
             src={imageFive}
-            cssClassName='work-card'
+            cssclassName='work-card'
             h3='Pardigm group investment'
             para='TRM is an enterprise SaaS solution that automates loan recoveries and communications within finance institutions.'
           />
           <Cards
             route='/coming-soon'
             src={imageTwo}
-            cssClassName='work-card'
+            cssclassName='work-card'
             h3='Pardigm group investment'
             para='TRM is an enterprise SaaS solution that automates loan recoveries and communications within finance institutions.'
           />

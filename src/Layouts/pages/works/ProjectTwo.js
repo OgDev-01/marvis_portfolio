@@ -1,5 +1,5 @@
 import Page from "../../../Components/Page"
-import Links from "../../Header/Links"
+// import Links from "../../Header/Links"
 import { motion } from "framer-motion"
 import { Link } from "react-router-dom"
 
@@ -28,11 +28,11 @@ export default function ProjectTwo() {
         className='project-wrap'>
         <div className='title'>
           <p>Paradgim gorup</p>
-          <h1>Invest in stocks and Crypto easily</h1>
+          <h1>Order food from the comfort of your home</h1>
         </div>
 
         <div className='large-figure-img'>
-          <img src='work-2/1.jpg' alt='figure image' />
+          <img src='work-2/1.jpg' alt='figure' />
         </div>
 
         <div className='role-wrap'>
@@ -57,12 +57,9 @@ export default function ProjectTwo() {
         <div className='abt-project'>
           <h2>About this project</h2>
           <p>
-            Redesigning a mobile app with a multi-million user base is always a
-            big responsibility. Users sometimes react negatively to changes in
-            interactions that have become familiar, which can bring down
-            ratings. Our team worked with Sleepiest to audition dozens of design
-            concepts until we found the perfect solution for improving the
-            design while keeping users comfortable with familiar interactions.
+            Bella foods is a fast and convenient hamburger delivery application.
+            We help customers conveniently order their favorite burgers with
+            specific details.
           </p>
         </div>
 
@@ -73,12 +70,8 @@ export default function ProjectTwo() {
         <div className='abt-project challenge'>
           <h2>The challenge</h2>
           <p>
-            Redesigning a mobile app with a multi-million user base is always a
-            big responsibility. Users sometimes react negatively to changes in
-            interactions that have become familiar, which can bring down
-            ratings. Our team worked with Sleepiest to audition dozens of design
-            concepts until we found the perfect solution for improving the
-            design while keeping users comfortable with familiar interactions.
+            To design a solution for users that simulates the same process of
+            ordering in the app name physical restaurant.
           </p>
         </div>
 
@@ -104,7 +97,7 @@ export default function ProjectTwo() {
           </div>
         </div>
 
-        <div className='abt-project probs'>
+        {/* <div className='abt-project probs'>
           <h2>Problem statements</h2>
           <ol>
             <li>
@@ -123,25 +116,24 @@ export default function ProjectTwo() {
               LABELS THAT HAVE LOW STREAMING ROYALTIES THEY WILL OUTGROW.
             </li>
           </ol>
-        </div>
+        </div> */}
+
         <div className='abt-project probs'>
-          <h2>Problem statements</h2>
+          <h2>Solution approached</h2>
           <ol>
             <li>
-              NEW ARTISTS FIND IT HARD TO GROW AS THEY STRUGGLE TO GAIN EXPOSURE
-              AS THEIR MUSIC WHEN THEIR MUSIC IS SAMPLED WITH NO CREDIT OR
-              FINANCIAL KICKBACK ON PLATFORMS SUCH AS SOUNDCLOUD AND YOUTUBE.
+              To maintain familiarity with the physical store, we studied the
+              current ordering system and created a friendly user flow.
             </li>
             <li>
-              NDEPENDENT ARTISTS HAVE THEIR CREATIVITY STIFLED BY FEAR OF BIG
-              LABELS THREATENING LEGAL ACTION FOR SAMPLING THEIR SONGS WHEN THE
-              LABELS SAMPLE SMALLER ARTISTS ALL THE TIME.
+              After understanding the sequence of operations of the ordering
+              system, it was simplified and kept familiar.
             </li>
-            <li>
+            {/* <li>
               ISING ARTISTS NEED HELP WITH SELLING MERCHANDISE AND ORGANISING
               TOURS BUT ARE SCARED OF GETTING LOCKED INTO BAD CONTRACTS WITH
               LABELS THAT HAVE LOW STREAMING ROYALTIES THEY WILL OUTGROW.
-            </li>
+            </li> */}
           </ol>
         </div>
 
@@ -157,9 +149,10 @@ export default function ProjectTwo() {
           <div className='d-title'>
             <h3>Define</h3>
             <p>
-              HAVING MADE THE APPRORIATE ADJUSMENTS FROM USER TESTING, IT WAS
-              TIME TO BRING THE SOLUTION TO LIFE WITH A BRAND IDENTITY AND HIGH
-              FIDELITY VISUALISATION.
+              To provide a good solution, interviews with regular customers were
+              carried out, to understand their needs, frustrations, and
+              motivations, to inform the solution ideation in the development
+              phases.
             </p>
           </div>
           <div className='d-flex'>
@@ -183,7 +176,7 @@ export default function ProjectTwo() {
         </div>
 
         <div className='change-wrap'>
-          <h1>CHangingi the narrative of modenr design for the mid age </h1>
+          <h1>Changing the story of medieval design </h1>
         </div>
 
         <div className='large2-figure-img'>
@@ -244,11 +237,9 @@ export default function ProjectTwo() {
         <div className='abt-project feedback'>
           <h2>Client Feedback</h2>
           <p>
-            We hereby announce that in according to the completion of designing,
-            developing, and testing our website, www.nana-asia.com, we are
-            delighted and fully satisfied in terms of workmanship of your
-            designs, providing assistance in troubleshooting issues, and
-            developing a responsive in the timeless possible manner...
+            As we tested the new app, we niticed how familiar it felt. We were
+            very happyan excited to introduceit to our customers and they loved
+            it....
           </p>
         </div>
 
@@ -256,12 +247,12 @@ export default function ProjectTwo() {
           <div className='next-link'>
             <Link
               to='/jorge-investment'
-              cssClass='next-link'
+              cssclass='next-link'
               className='next-link'>
               <img className='next-arrow prev' src='arrow.svg' alt='' />
             </Link>
             Next Project
-            <Link to='/redxam' cssClass='next-link' className='next-link'>
+            <Link to='/redxam' cssclass='next-link' className='next-link'>
               <img className='next-arrow' src='arrow.svg' alt='' />
             </Link>
           </div>

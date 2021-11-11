@@ -1,5 +1,5 @@
 import Page from "../../../Components/Page"
-import Links from "../../Header/Links"
+// import Links from "../../Header/Links"
 import { motion } from "framer-motion"
 import { Link } from "react-router-dom"
 import useLocoScroll from "../../../context/useLocoScroll"
@@ -19,7 +19,6 @@ const homeVariant = {
   },
 }
 export default function ProjectThree({ navBar }) {
-  useLocoScroll(navBar)
   return (
     <Page title='Redxam'>
       <motion.div
@@ -31,11 +30,11 @@ export default function ProjectThree({ navBar }) {
         className='project-wrap'>
         <div className='title'>
           <p>Paradgim gorup</p>
-          <h1>Invest in stocks and Crypto easily</h1>
+          <h1>All your crypto problems solved with ease</h1>
         </div>
 
         <div className='large-figure-img'>
-          <img src='work-3/1.png' alt='figure image' />
+          <img src='work-3/1.png' alt='figure' />
         </div>
 
         <div className='role-wrap'>
@@ -60,12 +59,10 @@ export default function ProjectThree({ navBar }) {
         <div className='abt-project'>
           <h2>About this project</h2>
           <p>
-            Redesigning a mobile app with a multi-million user base is always a
-            big responsibility. Users sometimes react negatively to changes in
-            interactions that have become familiar, which can bring down
-            ratings. Our team worked with Sleepiest to audition dozens of design
-            concepts until we found the perfect solution for improving the
-            design while keeping users comfortable with familiar interactions.
+            Redxam helps millions of people invest in cryptocurrencies more
+            easily and conveniently. Redxam provides guidelines for people that
+            want to invest in cryptocurrency, they take a deep dive into your
+            personal finance.
           </p>
         </div>
 
@@ -76,12 +73,11 @@ export default function ProjectThree({ navBar }) {
         <div className='abt-project challenge'>
           <h2>The challenge</h2>
           <p>
-            Redesigning a mobile app with a multi-million user base is always a
-            big responsibility. Users sometimes react negatively to changes in
-            interactions that have become familiar, which can bring down
-            ratings. Our team worked with Sleepiest to audition dozens of design
-            concepts until we found the perfect solution for improving the
-            design while keeping users comfortable with familiar interactions.
+            The crypto industry is very large. Many people are involved in this
+            industry. The young, middle-aged, and the elderly. These three
+            groups of different ages have different ways of thinking and
+            perspectives. Therefore, we needed to create a system that fits
+            anywhere between these three different personalities.
           </p>
         </div>
 
@@ -108,6 +104,27 @@ export default function ProjectThree({ navBar }) {
         </div>
 
         <div className='abt-project probs'>
+          <h2>Solution approached</h2>
+          <ol>
+            <li>
+              The main goal of becoming a central group of these three
+              personality groups was to keep the design as simple as possible
+              and remove the complexity so that the three personalities could
+              use the system with ease.
+            </li>
+            <li>
+              NDEPENDENT ARTISTS HAVE THEIR CREATIVITY STIFLED BY FEAR OF BIG
+              LABELS THREATENING LEGAL ACTION FOR SAMPLING THEIR SONGS WHEN THE
+              LABELS SAMPLE SMALLER ARTISTS ALL THE TIME.
+            </li>
+            <li>
+              ISING ARTISTS NEED HELP WITH SELLING MERCHANDISE AND ORGANISING
+              TOURS BUT ARE SCARED OF GETTING LOCKED INTO BAD CONTRACTS WITH
+              LABELS THAT HAVE LOW STREAMING ROYALTIES THEY WILL OUTGROW.
+            </li>
+          </ol>
+        </div>
+        {/* <div className='abt-project probs'>
           <h2>Problem statements</h2>
           <ol>
             <li>
@@ -126,30 +143,10 @@ export default function ProjectThree({ navBar }) {
               LABELS THAT HAVE LOW STREAMING ROYALTIES THEY WILL OUTGROW.
             </li>
           </ol>
-        </div>
-        <div className='abt-project probs'>
-          <h2>Problem statements</h2>
-          <ol>
-            <li>
-              NEW ARTISTS FIND IT HARD TO GROW AS THEY STRUGGLE TO GAIN EXPOSURE
-              AS THEIR MUSIC WHEN THEIR MUSIC IS SAMPLED WITH NO CREDIT OR
-              FINANCIAL KICKBACK ON PLATFORMS SUCH AS SOUNDCLOUD AND YOUTUBE.
-            </li>
-            <li>
-              NDEPENDENT ARTISTS HAVE THEIR CREATIVITY STIFLED BY FEAR OF BIG
-              LABELS THREATENING LEGAL ACTION FOR SAMPLING THEIR SONGS WHEN THE
-              LABELS SAMPLE SMALLER ARTISTS ALL THE TIME.
-            </li>
-            <li>
-              ISING ARTISTS NEED HELP WITH SELLING MERCHANDISE AND ORGANISING
-              TOURS BUT ARE SCARED OF GETTING LOCKED INTO BAD CONTRACTS WITH
-              LABELS THAT HAVE LOW STREAMING ROYALTIES THEY WILL OUTGROW.
-            </li>
-          </ol>
-        </div>
+        </div> */}
 
         <div className='journey-head'>
-          <h2>Process adopted in this journey</h2>
+          <h2>Lean research carried out for this project</h2>
         </div>
 
         <div className='map'>
@@ -160,9 +157,9 @@ export default function ProjectThree({ navBar }) {
           <div className='d-title'>
             <h3>Define</h3>
             <p>
-              HAVING MADE THE APPRORIATE ADJUSMENTS FROM USER TESTING, IT WAS
-              TIME TO BRING THE SOLUTION TO LIFE WITH A BRAND IDENTITY AND HIGH
-              FIDELITY VISUALISATION.
+              Considering the scope of the project, user research was carried
+              out and interviews and surveys were conducted on three groups of
+              personalities interested in cryptocurrency.
             </p>
           </div>
           <div className='d-flex'>
@@ -186,7 +183,7 @@ export default function ProjectThree({ navBar }) {
         </div>
 
         <div className='change-wrap'>
-          <h1>CHangingi the narrative of modenr design for the mid age </h1>
+          <h1>Turning simplicity into sophistication</h1>
         </div>
 
         <div className='large2-figure-img'>
@@ -217,8 +214,7 @@ export default function ProjectThree({ navBar }) {
         <div className='outcome-wrap'>
           <div className='outcome-title'>
             <h3>
-              20% of the functionality and features in any environment will be
-              responsible for 80% of the actions taken within that environment
+              "Design is intelligence made visible." -- Alina Wheeler, author
             </h3>
           </div>
         </div>
@@ -247,17 +243,14 @@ export default function ProjectThree({ navBar }) {
         <div className='abt-project feedback'>
           <h2>Client Feedback</h2>
           <p>
-            We hereby announce that in according to the completion of designing,
-            developing, and testing our website, www.nana-asia.com, we are
-            delighted and fully satisfied in terms of workmanship of your
-            designs, providing assistance in troubleshooting issues, and
-            developing a responsive in the timeless possible manner...
+            I appreciate the sophistication and simplicity in this design,
+            especially for a cryptocurrency platform...I’m amazed.
           </p>
         </div>
 
         <div className='next-btn'>
           <div className='next-link'>
-            <Link to='/bella-food' cssClass='next-link' className='next-link'>
+            <Link to='/bella-food' cssclass='next-link' className='next-link'>
               <img className='next-arrow prev' src='arrow.svg' alt='' />
             </Link>
             Prev project

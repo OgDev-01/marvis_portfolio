@@ -3,7 +3,7 @@ import React from "react"
 export default function ScrollText() {
   return (
     <>
-      <div className='scroll-container'>
+      <div className='scroll-container' data-scroll>
         <div className='scroll-one'>
           <span>Currently open to full time / remote job offers</span>
           <span>Currently open to full time / remote job offers</span>

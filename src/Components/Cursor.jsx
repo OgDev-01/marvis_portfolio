@@ -1,4 +1,3 @@
-import { easing } from "@mui/material"
 import React, { useState } from "react"
 
 export default function Cursor() {

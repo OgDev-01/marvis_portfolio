@@ -1,4 +1,4 @@
-import { React, useState, useEffect } from "react"
+import { React, useState } from "react"
 import Footer from "./Layouts/Footer/Footer"
 import NavBar from "./Layouts/Header/Navbar"
 import { Switch, Route, useLocation } from "react-router-dom"
@@ -11,11 +11,12 @@ import ProjectOne from "./Layouts/pages/works/ProjectOne"
 import ProjectThree from "./Layouts/pages/works/ProjectThree"
 import ProjectTwo from "./Layouts/pages/works/ProjectTwo"
 import ComingSoon from "./Components/ComingSoon"
-import { motion, AnimatePresence } from "framer-motion"
+import { AnimatePresence } from "framer-motion"
+// import useLocoScroll from "./context/useLocoScroll"
 
 function App() {
   const [navBar, setNavBar] = useState(false)
-  const [loading, setLoading] = useState(true)
+  // const [loading, setLoading] = useState(true)
   const location = useLocation()
 
   return (

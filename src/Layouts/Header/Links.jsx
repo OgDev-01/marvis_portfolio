@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 export default function Links({
   name,
   route,
-  cssClass,
+  cssclass,
   animateCss,
   handleClose,
 }) {
@@ -27,7 +27,7 @@ export default function Links({
 
   console.log(links)
   return (
-    <Link className={cssClass} onClick={handleClose} id={animateCss} to={route}>
+    <Link className={cssclass} onClick={handleClose} id={animateCss} to={route}>
       <span className='span'>{name}</span>
     </Link>
   )

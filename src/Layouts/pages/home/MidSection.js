@@ -3,7 +3,7 @@ import marvisImage from "../../../images/marvis-home.png"
 export default function MidSection() {
   return (
     <>
-      <div className='midsection'>
+      <div className='midsection' data-scroll>
         <div className='bio-img'>
           <div className='img-c'>
             <img src={marvisImage} alt='marvis' />

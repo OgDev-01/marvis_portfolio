@@ -49,31 +49,31 @@ export default function NavLinks({ navBar, setNavBar }) {
                       handleClose={handleClose}
                       name={"Facebook"}
                       route='/'
-                      cssClass='s-link'
+                      cssclass='s-link'
                     />
                     <Links
                       handleClose={handleClose}
                       name={"Behance"}
                       route='/'
-                      cssClass='s-link'
+                      cssclass='s-link'
                     />
                     <Links
                       handleClose={handleClose}
                       name={"Dribbble"}
                       route='/'
-                      cssClass='s-link'
+                      cssclass='s-link'
                     />
                     <Links
                       handleClose={handleClose}
                       name={"Instagram"}
                       route='/'
-                      cssClass='s-link'
+                      cssclass='s-link'
                     />
                     <Links
                       handleClose={handleClose}
                       name={"Twitter"}
                       route='/'
-                      cssClass='s-link'
+                      cssclass='s-link'
                     />
                   </div>
                 </div>
@@ -84,31 +84,31 @@ export default function NavLinks({ navBar, setNavBar }) {
                       handleClose={handleClose}
                       name={"Home"}
                       route='/'
-                      cssClass='m-link'
+                      cssclass='m-link'
                     />
                     <Links
                       handleClose={handleClose}
                       name={"Work"}
                       route='/project'
-                      cssClass='m-link'
+                      cssclass='m-link'
                     />
                     <Links
                       handleClose={handleClose}
                       name={"About"}
                       route='/about'
-                      cssClass='m-link'
+                      cssclass='m-link'
                     />
                     <Links
                       handleClose={handleClose}
                       name={"Services"}
                       route='/services'
-                      cssClass='m-link'
+                      cssclass='m-link'
                     />
                     <Links
                       handleClose={handleClose}
                       name={"Contacts"}
                       route='/contact'
-                      cssClass='m-link'
+                      cssclass='m-link'
                     />
                   </div>
                 </div>
@@ -119,7 +119,7 @@ export default function NavLinks({ navBar, setNavBar }) {
                   <Links
                     name={"dosamarvis@gmail.com"}
                     route='/'
-                    cssClass='s-link'
+                    cssclass='s-link'
                     animateCss='refresh'
                   />
                 </div>

@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "react-router-dom"
+// import { Link } from "react-router-dom"
 import pImage from "../../../images/profile.png"
 import starImg from "../../../images/star.png"
 import { motion } from "framer-motion"

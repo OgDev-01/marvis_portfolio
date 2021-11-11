@@ -1,6 +1,6 @@
 import React from "react"
 import Page from "../../../Components/Page"
-import Links from "../../Header/Links"
+// import Links from "../../Header/Links"
 import { motion } from "framer-motion"
 import { Link } from "react-router-dom"
 import useLocoScroll from "../../../context/useLocoScroll"
@@ -20,12 +20,10 @@ const homeVariant = {
   },
 }
 export default function ProjectOne({ navBar }) {
-  useLocoScroll(navBar)
-
   return (
     <Page Page title='Jorge investment'>
       <motion.div
-        data-scroll-container
+        data-scroll-section
         variants={homeVariant}
         animate='visible'
         initial='hidden'
@@ -37,7 +35,7 @@ export default function ProjectOne({ navBar }) {
         </div>
 
         <div className='large-figure-img'>
-          <img src='Crypto/1.jpg' alt='figure image' />
+          <img src='Crypto/1.jpg' alt='figure' />
         </div>
 
         <div className='role-wrap'>
@@ -258,7 +256,7 @@ export default function ProjectOne({ navBar }) {
         </div>
 
         <div className='next-btn'>
-          <Link to='/bella-food' cssClass='next-link' className='next-link'>
+          <Link to='/bella-food' cssclass='next-link' className='next-link'>
             Next Project
             <img className='next-arrow' src='arrow.svg' alt='' />
           </Link>

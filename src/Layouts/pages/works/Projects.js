@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react"
+import React from "react"
 import Page from "../../../Components/Page"
-import Links from "../../Header/Links"
+// import Links from "../../Header/Links"
 import ScrollText from "../home/ScrollText"
 import SelectedFlex from "../home/SelectedFlex"
 import { motion } from "framer-motion"

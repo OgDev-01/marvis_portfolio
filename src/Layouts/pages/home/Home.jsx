@@ -1,11 +1,11 @@
-import React, { useEffect } from "react"
+import React from "react"
 import Page from "../../../Components/Page"
 import Landed from "./Landed"
 import MidSection from "./MidSection"
 import ScrollText from "./ScrollText"
 import SelectedWorks from "./SelectedWorks"
-import LocomotiveScroll from "locomotive-scroll"
-import "locomotive-scroll/src/locomotive-scroll.scss"
+// import LocomotiveScroll from "locomotive-scroll"
+// import "locomotive-scroll/src/locomotive-scroll.scss"
 import { motion } from "framer-motion"
 import useLocoScroll from "../../../context/useLocoScroll"
 
@@ -25,7 +25,6 @@ const homeVariant = {
 }
 
 export default function Home({ navBar }) {
-  useLocoScroll(navBar)
   return (
     <Page title='Home'>
       <motion.div
@@ -33,8 +32,7 @@ export default function Home({ navBar }) {
         variants={homeVariant}
         animate='visible'
         initial='hidden'
-        exit='exit'
-        data-scroll-container>
+        exit='exit'>
         <Landed />
         <MidSection />
         <ScrollText />
