@@ -1,25 +1,58 @@
-import logo from './logo.svg';
-import './App.css';
+import { React, useState, useEffect } from "react"
+import Footer from "./Layouts/Footer/Footer"
+import NavBar from "./Layouts/Header/Navbar"
+import { Switch, Route, useLocation } from "react-router-dom"
+import NavLinks from "./Layouts/Header/NavLinks"
+import Home from "./Layouts/pages/home/Home"
+import About from "./Layouts/pages/about/About"
+import Projects from "./Layouts/pages/works/Projects"
+import Cursor from "./Components/Cursor"
+import ProjectOne from "./Layouts/pages/works/ProjectOne"
+import ProjectThree from "./Layouts/pages/works/ProjectThree"
+import ProjectTwo from "./Layouts/pages/works/ProjectTwo"
+import ComingSoon from "./Components/ComingSoon"
+import { motion, AnimatePresence } from "framer-motion"
 
 function App() {
+  const [navBar, setNavBar] = useState(false)
+  const [loading, setLoading] = useState(true)
+  const location = useLocation()
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Cursor />
+      <div className='App'>
+        <NavBar navBar={navBar} setNavBar={setNavBar} />
+        <NavLinks setNavBar={setNavBar} navBar={navBar} />
+        <AnimatePresence exitBeforeEnter>
+          <Switch location={location} key={location.key}>
+            <Route exact={true} path='/'>
+              <Home navBar={navBar} />
+            </Route>
+            <Route path='/about'>
+              <About navBar={navBar} />
+            </Route>
+            <Route path='/project'>
+              <Projects navBar={navBar} />
+            </Route>
+            <Route path='/jorge-investment'>
+              <ProjectOne navBar={navBar} />
+            </Route>
+            <Route path='/bella-food'>
+              <ProjectTwo navBar={navBar} />
+            </Route>
+            <Route path='/redxam'>
+              <ProjectThree navBar={navBar} />
+            </Route>
+            <Route path='/coming-soon'>
+              <ComingSoon navBar={navBar} />
+            </Route>
+          </Switch>
+        </AnimatePresence>
+        <Footer />
+      </div>
+    </>
+  )
 }
 
-export default App;
+export default App

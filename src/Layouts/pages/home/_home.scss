@@ -1,0 +1,468 @@
+@import "../../../Css/variables.scss";
+
+//wrapper styles
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+//landed styles
+.landed {
+  width: 100%;
+  padding: 30px 75px;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+    padding: 30px 20px;
+  }
+  @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+    padding: 30px 20px;
+  }
+  .caption {
+    max-height: max-content;
+    overflow: hidden;
+    h1 {
+      max-height: max-content;
+      overflow: hidden;
+      font-size: $h1d;
+      font-family: $italic;
+      font-weight: 700;
+      font-style: italic;
+      span {
+        color: $secondary;
+      }
+
+      @media screen and(max-width: 768px) {
+        font-size: $h1t;
+      }
+      @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+        font-size: 42px;
+      }
+      @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+        font-size: 42px;
+        line-height: 45px;
+      }
+    }
+  }
+  .description {
+    width: 60%;
+
+    @media screen and(max-width: 768px) {
+      width: 90%;
+      margin-top: 20px;
+    }
+
+    p {
+      font-size: $pd;
+      color: #c1c1c1;
+
+      @media screen and(max-width: 768px) {
+        font-size: $pt;
+      }
+      @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+        font-size: $pm;
+      }
+      @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+        font-size: $pm;
+      }
+    }
+  }
+  .imoji {
+    width: 456px;
+    height: 456px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background: url("../../../images/Emoji.png");
+    margin-left: auto;
+    transform: translateY(-210px);
+
+    @media screen and(max-width: 768px) {
+      width: 220px;
+      height: 220px;
+      background-size: contain;
+      transform: translateY(10px);
+    }
+    @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+      transform: translate(-25%, 150px);
+    }
+    @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+      transform: translate(-25%, 150px);
+    }
+  }
+  .scroll-down {
+    width: 150px;
+    height: 150px;
+    // background: $secondary;
+    transform: translateY(-400px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    @media screen and(max-width: 768px) {
+      width: 100px;
+      height: 100px;
+      transform: translateY(-200px);
+    }
+
+    .circle {
+      width: 100%;
+      height: 100%;
+      background-color: $primary;
+      border: 0.5px solid $white;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .arrow-down {
+        width: 70px;
+        height: 30px;
+        // margin-bottom: 30px;
+        background-color: $white;
+        clip-path: polygon(
+          0 13px,
+          63px 13px,
+          55px 0,
+          100% 50%,
+          55px 100%,
+          63px 16px,
+          0 16px
+        );
+        transform: rotate(90deg);
+      }
+    }
+  }
+}
+
+//mid section styles
+.midsection {
+  width: 100%;
+  height: 550px;
+  // border: 1px solid $white;
+  transform: translateY(-150px);
+  display: flex;
+  justify-content: space-between;
+  // padding: 30px 0;
+  padding: $base-padding;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  @media screen and(max-width: 768px) {
+    flex-direction: column;
+    height: auto;
+    transform: translateY(0);
+  }
+  @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+    transform: translateY(150px);
+    padding: 30px 20px;
+  }
+
+  .bio-img {
+    width: 50%;
+    height: 100%;
+    // background-color: $secondary;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 65px;
+
+    @media screen and(max-width: 768px) {
+      width: 90%;
+      justify-content: center;
+      height: 430px;
+    }
+    @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+      width: 100%;
+      padding-left: 0;
+    }
+
+    .img-c {
+      width: 380px;
+      height: 100%;
+
+      @media screen and(max-width: 768px) {
+        width: 340px;
+      }
+      @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+        height: 431px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .bio-caption {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+
+    @media screen and(max-width: 768px) {
+      width: 100%;
+      justify-content: center;
+      margin-top: 50px;
+      padding: 0 40px;
+    }
+
+    p {
+      font-size: $pd;
+      color: $gray;
+
+      @media screen and(max-width: 768px) {
+        text-align: center;
+        font-size: $pt;
+      }
+      @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+//scroll text section
+.scroll-container {
+  width: 100%;
+  height: 500px;
+  max-height: 550px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+    margin-top: 100px;
+  }
+
+  .scroll-one {
+    width: 140%;
+    background-color: black;
+    padding: 15px 0;
+    border-top: 0.8px solid $gray;
+    border-bottom: 0.8px solid $gray;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    transform: rotate(-8deg);
+    left: -20px;
+    margin-bottom: 50px;
+
+    span {
+      white-space: nowrap;
+      overflow: auto;
+      margin: 0 15px;
+      display: inline-block;
+      animation: slide-in-left 8s linear infinite alternate both;
+      color: $gray;
+      font-size: $pld;
+
+      &::after {
+        content: "";
+        width: 2px;
+        height: 35px;
+        background-color: $gray;
+        display: inline-block;
+        margin-left: 10px;
+        vertical-align: middle;
+      }
+    }
+  }
+  .scroll-two {
+    width: 140%;
+    background-color: black;
+    padding: 15px 0;
+    border-top: 0.8px solid $gray;
+    border-bottom: 0.8px solid $gray;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    transform: rotate(2deg);
+    left: -20px;
+    margin-bottom: 50px;
+
+    span {
+      white-space: nowrap;
+      overflow: auto;
+      margin: 0 15px;
+      display: inline-block;
+      animation: slide-in-right 6s linear infinite alternate both;
+      color: $gray;
+      font-size: $pld;
+
+      &::after {
+        content: "";
+        width: 2px;
+        height: 35px;
+        background-color: $gray;
+        display: inline-block;
+        margin-left: 10px;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+//selected works styles
+.selected-work-wrap {
+  width: 100%;
+  padding: 20px 150px 200px 150px;
+  margin-top: 10px;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  @media screen and(max-width: 768px) {
+    padding: 20px 80px 200px 80px;
+  }
+  @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+    padding: 20px 20px 100px 20px;
+  }
+
+  .selected-title {
+    h2 {
+      font-size: $h2d;
+      text-align: center;
+
+      @media screen and(max-width: 768px) {
+        font-family: $italic;
+        text-transform: uppercase;
+        font-size: $h1t;
+      }
+      @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+        font-size: 42px;
+      }
+    }
+  }
+  .selected-flex {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and(max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+    }
+    @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+      width: 100%;
+      margin-top: -80px;
+    }
+
+    .select-one,
+    .select-two {
+      width: 45%;
+
+      @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+        width: 100%;
+      }
+    }
+    .select-two {
+      margin-top: 250px;
+      @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+        margin: 0;
+      }
+    }
+    .card {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      margin-top: 150px;
+
+      @media screen and(max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+      }
+      @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+        width: 100%;
+      }
+      .card-img {
+        @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+          // height: 240px;
+        }
+        @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+          width: 100%;
+        }
+        img {
+          @media screen and (max-width: 400px) {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+      .card-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+
+        width: 100%;
+
+        @media screen and(max-width: 768px) {
+          padding: 60px 60px;
+          width: 100%;
+        }
+        @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+          padding: 50px 20px;
+          width: 100%;
+        }
+
+        .figure,
+        .descript,
+        .details {
+          width: 100%;
+        }
+
+        .figure {
+          font-size: 34px;
+          font-family: inter, sans-serif;
+          margin-top: 20px;
+          line-height: 110%;
+          font-weight: 600;
+
+          @media screen and(max-width: 768px) {
+            font-size: 22px;
+          }
+        }
+        .descript {
+          font-size: 16px;
+          color: $gray;
+          margin-top: 20px;
+
+          @media screen and(max-width: 768px) {
+            font-size: $plt;
+            padding-right: 120px;
+            margin-top: 30px;
+          }
+          @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+            padding-right: 0;
+          }
+        }
+        .details {
+          width: 65px;
+          height: 65px;
+          border-radius: 50%;
+          border: 0.8px solid $gray;
+          transform: translateY(30px);
+        }
+      }
+    }
+  }
+}
+
+//animations
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-200px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(200px);
+  }
+}

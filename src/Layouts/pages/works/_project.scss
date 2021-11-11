@@ -1,0 +1,842 @@
+//projects wrapper style
+.project-wrap {
+  max-width: 1440px;
+  margin: 0 auto;
+  .title {
+    padding: 120px 80px;
+
+    @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+      padding: 120px 20px;
+    }
+    p {
+      font-size: $pd;
+
+      @media screen and(max-width: 768px) {
+        font-size: $pt;
+      }
+      @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+        font-size: $pm;
+      }
+    }
+    h1 {
+      font-size: 80px;
+      @media screen and(max-width: 768px) {
+        font-size: $h2d;
+      }
+      @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .large-figure-img {
+    width: 100%;
+    height: 750px;
+    background-color: $gray;
+    @media screen and(max-width: 768px) {
+      height: 400px;
+    }
+    @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+      height: 210px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  //role-wrap style
+  .role-wrap {
+    width: 85%;
+    margin: 0 auto;
+    padding: 200px 150px;
+    border-bottom: 0.8px solid $gray;
+
+    @media screen and(max-width: 768px) {
+      padding: 150px 10px;
+    }
+    @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+      padding: 150px 0px;
+    }
+
+    .roles {
+      display: flex;
+      justify-content: space-between;
+
+      @media screen and(max-width: 768px) {
+        justify-content: space-around;
+      }
+      @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+        display: block;
+      }
+      .r {
+        width: 25%;
+
+        figure {
+          font-size: $pld;
+          @media screen and(max-width: 768px) {
+            font-size: $pt;
+          }
+        }
+        .role {
+          font-size: 34px;
+          font-weight: 700;
+          margin-top: 25px;
+
+          @media screen and(max-width: 768px) {
+            font-size: $h3t;
+          }
+          @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+          }
+        }
+      }
+      .r-one {
+        @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+          width: 60%;
+          // background-color: red;
+          display: inline-block;
+        }
+      }
+      .r-two {
+        @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+          width: 40%;
+          display: inline-block;
+          transform: translateY(-50px);
+        }
+      }
+      .r-three {
+        @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+          margin-top: 50px;
+        }
+      }
+    }
+  }
+  //abt-project style
+  .abt-project {
+    margin-top: 150px;
+    padding: 10px 130px 150px 130px;
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+
+    @media screen and (max-width: 768px) {
+      padding: 10px 60px 180px 60px;
+    }
+    @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+      flex-direction: column;
+      padding: 10px 20px 180px 20px;
+    }
+    h2 {
+      width: 100px;
+      font-size: 34px;
+      @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+        width: 200px;
+        font-size: 28px;
+      }
+    }
+    p {
+      width: 55%;
+      font-size: $pd;
+      line-height: 30px;
+
+      @media screen and (max-width: 768px) {
+        font-size: $pt;
+      }
+      @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+        width: 100%;
+        font-size: $pm;
+        line-height: 160%;
+        margin-top: 50px;
+      }
+    }
+    ol {
+      width: 55%;
+      line-height: 30px;
+      li {
+        line-height: 32px;
+        font-size: $pd;
+      }
+    }
+  }
+  //second-img style
+  .second-img {
+    width: 82%;
+    height: 605px;
+    background-color: $gray;
+    margin: 0 auto;
+
+    @media screen and (max-width: 768px) {
+      height: 350px;
+    }
+    @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+      height: 200px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .challenge {
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    h2 {
+      @media screen and(max-width: 768px) {
+        width: 100px;
+        word-wrap: break-word;
+      }
+      @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+        width: 150px;
+      }
+    }
+    p {
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        margin-top: 60px;
+      }
+      @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+        font-size: $pm;
+      }
+    }
+  }
+
+  .illustrate {
+    width: 100%;
+    padding: 100px 100px;
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      padding: 100px 100px;
+    }
+    @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+      padding: 80px 20px;
+    }
+
+    .i-card-one {
+      width: 42%;
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+      .f {
+        width: 100%;
+        height: 750px;
+        background-color: $gray;
+      }
+
+      .s {
+        margin-top: 100px;
+        position: relative;
+        height: 500px;
+
+        &::after {
+          content: "The illustration style went through several phases and multiple iterations.";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 40px;
+          top: 105%;
+          padding: 0 40px;
+          text-align: center;
+          font-size: $pd;
+        }
+      }
+
+      .t {
+        width: 100%;
+        height: 750px;
+        background-color: $gray;
+        margin-top: 150px;
+      }
+    }
+
+    .i-card-two {
+      width: 42%;
+      margin-top: 100px;
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+
+      .t {
+        width: 100%;
+        height: 750px;
+        background-color: $gray;
+        margin-top: 150px;
+      }
+    }
+  }
+
+  .probs {
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    ol {
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        margin-top: 60px;
+      }
+      @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+        list-style-position: outside;
+        padding-left: 15px;
+      }
+      li {
+        @media screen and (max-width: 768px) {
+          font-size: $plt;
+          line-height: 22px;
+
+          @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+            line-height: 160%;
+            font-size: $pm;
+          }
+        }
+      }
+    }
+  }
+  .journey-head {
+    width: 100%;
+    padding: 100px;
+
+    @media screen and(max-width: 768px) {
+      padding: 100px 100px 100px 60px;
+    }
+    @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+      padding: 100px 20px 100px 20px;
+    }
+    h2 {
+      font-size: 65px;
+      width: 60%;
+      @media screen and(max-width: 768px) {
+        font-size: $h2d;
+        width: 100%;
+      }
+      @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+        font-size: 34px;
+      }
+    }
+  }
+
+  .map {
+    height: 700px;
+    width: 85%;
+    background-color: $white;
+    margin: 0 auto;
+
+    @media screen and(max-width: 768px) {
+      height: 400px;
+    }
+    @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+      height: 200px;
+    }
+  }
+
+  .define-wrap {
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 250px;
+    padding-bottom: 100px;
+
+    h3 {
+      font-size: 34px;
+    }
+    p {
+      font-size: $pd;
+      padding-right: 200px;
+      line-height: 30px;
+      margin-top: 50px;
+      @media screen and(max-width: 768px) {
+        padding-right: 0;
+      }
+      @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+        font-size: $pm;
+        line-height: 160%;
+      }
+    }
+
+    .shape {
+      width: 100%;
+      height: 450px;
+      background-color: $gray;
+      margin-top: 100px;
+      @media screen and(max-width: 768px) {
+        height: 270px;
+      }
+      @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+        height: 130px;
+      }
+    }
+  }
+
+  .develop-wrap {
+    width: 85%;
+    margin: 150px auto;
+    display: flex;
+    justify-content: space-between;
+    @media screen and(max-width: 768px) {
+      flex-direction: column;
+      margin-top: 100px;
+    }
+
+    .d-one,
+    .d-two {
+      width: 47%;
+
+      @media screen and(max-width: 768px) {
+        width: 95%;
+      }
+    }
+
+    .d-one {
+      h3 {
+        font-size: 34px;
+      }
+      p {
+        font-size: $pd;
+        margin-top: 30px;
+        padding-right: 10px;
+        @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+          font-size: $pm;
+          line-height: 160%;
+        }
+      }
+      .dev-one {
+        width: 100%;
+        height: 700px;
+        background-color: $gray;
+        margin-top: 80px;
+        @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+          height: 250px;
+        }
+      }
+      .dev-two {
+        width: 100%;
+        height: 700px;
+        background-color: $gray;
+        margin-top: 80px;
+        @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+          height: 350px;
+        }
+      }
+    }
+
+    .d-two {
+      margin-top: 150px;
+      .dev-three {
+        width: 100%;
+        height: 600px;
+        background-color: $gray;
+        @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+          height: 340px;
+        }
+      }
+      p {
+        font-size: $pd;
+        margin-top: 24px;
+        @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+          font-size: $pm;
+          line-height: 160%;
+        }
+      }
+    }
+  }
+
+  .delivery-wrap {
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 200px;
+
+    .d-title {
+      width: 80%;
+
+      @media screen and(max-width: 768px) {
+        width: 95%;
+      }
+      h3 {
+        font-size: 34px;
+      }
+      p {
+        font-size: $pd;
+        margin-top: 40px;
+        line-height: 32px;
+        @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+          font-size: $pm;
+          line-height: 160%;
+        }
+      }
+    }
+    .d-flex {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      margin-top: 100px;
+      margin-bottom: 100px;
+
+      @media screen and(max-width: 768px) {
+        flex-direction: column;
+      }
+
+      .flex-one {
+        width: 45%;
+        margin-top: 250px;
+
+        @media screen and(max-width: 768px) {
+          width: 100%;
+        }
+
+        .d-img-one {
+          width: 100%;
+          height: 750px;
+          background-color: $gray;
+          position: relative;
+
+          @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+            height: 345px;
+          }
+        }
+        .d-img-two {
+          width: 100%;
+          height: 500px;
+          background-color: $gray;
+          margin-top: 100px;
+          position: relative;
+
+          @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+            height: 345px;
+          }
+        }
+        .d-img-three {
+          width: 100%;
+          height: 450px;
+          background-color: $gray;
+          margin-top: 150px;
+
+          @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+            height: 260px;
+          }
+        }
+      }
+      .flex-two {
+        width: 45%;
+        @media screen and(max-width: 768px) {
+          width: 100%;
+        }
+
+        .d-img-one {
+          width: 100%;
+          height: 700px;
+          background-color: $gray;
+          position: relative;
+          &::after {
+            content: "After performing the appropriate adjustments from user testing, it was time to provide the solution to life with brand identification and high fidelity visualization that corresponded to the concept of the project.";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 40px;
+            top: 105%;
+            // padding: 0 40px;
+            text-align: left;
+            font-size: 16px;
+            line-height: 160%;
+            @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+              font-size: $pm;
+              line-height: 160%;
+              padding: 0 20px;
+            }
+          }
+          @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+            height: 450px;
+          }
+        }
+        .d-img-two {
+          width: 100%;
+          height: 700px;
+          background-color: $gray;
+          margin-top: 200px;
+          @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+            height: 450px;
+          }
+        }
+      }
+    }
+  }
+
+  .change-wrap {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 150px;
+    h1 {
+      font-size: $h1d;
+      font-family: $italic;
+      text-transform: uppercase;
+      line-height: 120px;
+      @media screen and(max-width: 768px) {
+        font-size: 75px;
+        line-height: 75px;
+      }
+      @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+        font-size: 42px;
+        line-height: 100%;
+      }
+    }
+  }
+
+  .large2-figure-img {
+    width: 100%;
+    height: 750px;
+    background-color: $gray;
+    margin-top: 200px;
+
+    @media screen and(max-width: 768px) {
+      height: 450px;
+    }
+    @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+      height: 190px;
+      width: 90%;
+      margin: 150px auto;
+    }
+  }
+
+  .last-card-grid {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    @media screen and(max-width: 768px) {
+      flex-direction: column;
+    }
+    @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+      padding-top: 100px;
+    }
+
+    .last-flex-one,
+    .last-flex-two {
+      width: 45%;
+      @media screen and(max-width: 768px) {
+        width: 100%;
+      }
+    }
+
+    .last-flex-one {
+      .l-one {
+        width: 100%;
+        height: 750px;
+        background-color: $gray;
+
+        @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+          height: 690px;
+        }
+      }
+      .l-two {
+        width: 100%;
+        height: 750px;
+        background-color: $gray;
+        margin-top: 100px;
+        @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+          height: 300px;
+        }
+      }
+      .l-three {
+        width: 100%;
+        height: 500px;
+        background-color: $gray;
+        margin-top: 100px;
+        @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+          height: 700px;
+        }
+      }
+    }
+    .last-flex-two {
+      margin-top: 300px;
+      .l-one {
+        width: 100%;
+        height: 750px;
+        background-color: $gray;
+        @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+          height: 450px;
+        }
+      }
+      .l-two {
+        width: 100%;
+        height: 750px;
+        background-color: $gray;
+        margin-top: 100px;
+        @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+          height: 450px;
+        }
+      }
+      .l-three {
+        width: 100%;
+        height: 350px;
+        background-color: $gray;
+        margin-top: 100px;
+        @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+          height: 210px;
+        }
+      }
+      .l-four {
+        width: 100%;
+        height: 600px;
+        background-color: $gray;
+        margin-top: 100px;
+        @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+          height: 390px;
+        }
+      }
+    }
+  }
+
+  .outcome-wrap {
+    width: 85%;
+    padding: 100px 0;
+    margin: 0 auto;
+
+    @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+      width: 90%;
+    }
+
+    .outcome-title {
+      h3 {
+        font-size: 50px;
+
+        @media screen and(max-width: 768px) {
+          font-size: $h2d;
+          width: 80%;
+        }
+        @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+          font-size: 34px;
+          width: 100%;
+        }
+      }
+    }
+    .circle-flex-wrap {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 60px;
+
+      @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+        flex-direction: column;
+      }
+
+      .circle-card {
+        width: 20%;
+        // border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+          width: 100%;
+          margin-top: 20px;
+        }
+        .circle {
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
+          background-color: $gray;
+        }
+        .percent {
+          text-align: center;
+          span {
+            font-family: $normal;
+            font-size: $h3d;
+          }
+        }
+      }
+    }
+  }
+
+  .feedback {
+    @media screen and(max-width: 768px) {
+      flex-direction: column;
+    }
+    h2 {
+      @media screen and(max-width: 768px) {
+        width: 110px;
+        word-wrap: break-word;
+      }
+    }
+    p {
+      @media screen and(max-width: 768px) {
+        margin-top: 50px;
+        width: 90%;
+      }
+    }
+  }
+
+  .next-btn {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0 200px 0;
+
+    .next-link {
+      font-size: $h1d;
+      font-family: $italic;
+      font-weight: 700;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .span {
+        color: $white;
+      }
+
+      @media screen and(max-width: 768px) {
+        font-size: 75px;
+      }
+      @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+        font-size: 45px;
+      }
+
+      .next-arrow {
+        width: 100px;
+      }
+      .prev {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .figures {
+    width: 85%;
+    margin: 120px 90px 0 90px;
+
+    @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+      transform: translateY(20px);
+      width: 90%;
+      margin: 40px auto 40px auto;
+    }
+
+    h1 {
+      font-size: 120px;
+      font-family: $italic;
+      font-weight: bold;
+      font-style: italic;
+      line-height: 100%;
+      letter-spacing: -2px;
+      text-transform: uppercase;
+
+      @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+        font-size: 45px;
+        font-family: $italic;
+        font-weight: bold;
+        font-style: italic;
+        line-height: 100%;
+        letter-spacing: -2px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
