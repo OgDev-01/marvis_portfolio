@@ -29,6 +29,7 @@
       font-family: $italic;
       font-weight: 700;
       font-style: italic;
+      color: $white;
       span {
         color: $secondary;
       }
@@ -309,7 +310,9 @@
 
   .selected-title {
     h2 {
-      font-size: $h2d;
+      font-size: $h1d;
+
+      font-family: $italic;
       text-align: center;
 
       @media screen and(max-width: 768px) {

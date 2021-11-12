@@ -26,6 +26,7 @@
       font-family: $italic;
       line-height: 110%;
       text-transform: uppercase;
+      color: $white;
 
       span {
         color: $secondary;
@@ -60,6 +61,12 @@
 
       @media screen and(max-width:768px) {
         width: 100%;
+      }
+    }
+    .p-img {
+      @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+        width: 270px;
+        height: 270px;
       }
     }
     .p-text {

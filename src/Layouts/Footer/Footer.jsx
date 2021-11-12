@@ -3,7 +3,7 @@ import Links from "../Header/Links"
 import star from "../../images/last_star.png"
 import useLocoScroll from "../../context/useLocoScroll"
 export default function Footer({ navBar }) {
-  const [inputValue, setInputValue] = useState()
+  const [inputValue, setInputValue] = useState(null)
   useLocoScroll(navBar)
   const updateField = e => {
     setInputValue(e.target.value)
@@ -17,14 +17,34 @@ export default function Footer({ navBar }) {
               <h2>HAVE AN IDEA? TELL ME ABOUT IT</h2>
             </div>
             <div className='foot-social'>
-              <Links
-                name={"dosamarvis@gmail.com"}
-                route='/'
-                cssclass='m-link'
-              />
-              <Links name={"Linkedin"} route='/' cssclass='m-link' />
-              <Links name={"Dribbble"} route='/' cssclass='m-link' />
-              <Links name={"Instagram"} route='/' cssclass='m-link' />
+              <a
+                href=' https://dosamarvis@gmail.com'
+                target='_blank'
+                rel='noopener'
+                className='m-link'>
+                gmail
+              </a>
+              <a
+                href=' https://www.linkedin.com/in/marvisdosa'
+                target='_blank'
+                rel='noopener'
+                className='m-link'>
+                Linkedin
+              </a>
+              <a
+                href=' https://dribbble.com/marvisIghedosa'
+                target='_blank'
+                rel='noopener'
+                className='m-link'>
+                Dribbble
+              </a>
+              <a
+                href=' https://www.instagram.com/marvisighedosa'
+                target='_blank'
+                rel='noopener'
+                className='m-link'>
+                Instagram
+              </a>
             </div>
             <form action='#' method='post'>
               <input
@@ -33,6 +53,7 @@ export default function Footer({ navBar }) {
                 value={inputValue}
                 onChange={updateField}
               />
+              {inputValue && <button type='submit'>Send</button>}
             </form>
           </div>
           <div className='right-foot'>

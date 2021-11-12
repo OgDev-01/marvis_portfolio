@@ -167,6 +167,7 @@
     height: 605px;
     background-color: $gray;
     margin: 0 auto;
+    max-width: 1092px;
 
     @media screen and (max-width: 768px) {
       height: 350px;
@@ -885,7 +886,9 @@
       }
     }
   }
+}
 
+.project-wrap-c {
   .figures {
     width: 85%;
     margin: 120px 90px 0 90px;

@@ -27,7 +27,11 @@ export default function Links({
 
   console.log(links)
   return (
-    <Link className={cssclass} onClick={handleClose} id={animateCss} to={route}>
+    <Link
+      className={cssclass}
+      onClick={handleClose}
+      id={animateCss}
+      to={{ pathname: { route } }}>
       <span className='span'>{name}</span>
     </Link>
   )

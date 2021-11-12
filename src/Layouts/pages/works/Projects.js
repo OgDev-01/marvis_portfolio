@@ -27,7 +27,7 @@ export default function Projects() {
         initial='hidden'
         animate='visible'
         exit='exit'
-        className='project-wrap'>
+        className='project-wrap-c'>
         <div className='figures'>
           <h1>View selected projects below</h1>
         </div>

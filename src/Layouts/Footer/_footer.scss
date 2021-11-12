@@ -54,18 +54,18 @@
       }
       .foot-social {
         display: flex;
-        width: 100%;
+        width: 80%;
         justify-content: space-between;
         margin-top: 20px;
         font-size: $pld;
         color: $primary;
         text-decoration: underline;
+        // padding: 0 20px 0;
 
         @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
           font-size: 12px;
           text-decoration: underline;
-          // text-decoration: none;
-          // background-color: $primary;
+          flex-direction: column;
         }
         @media screen and(max-width: 768px) {
           font-size: 14px;
@@ -82,9 +82,31 @@
       form {
         width: 100%;
         margin-top: 20px;
+        display: flex;
+
+        @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+          flex-direction: column;
+          align-items: flex-start;
+          margin-top: 35px;
+        }
+
+        button {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          border: none;
+          background-color: $primary;
+          margin-left: 10px;
+
+          @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+            // margin-top: 20px;
+            // margin-left: 0;
+            margin: 20px auto 0 auto;
+          }
+        }
 
         input {
-          width: 100%;
+          width: 89%;
           height: 64px;
           outline: none;
           border: 1px solid #05080e;
@@ -106,6 +128,7 @@
           @media screen and(max-width: 768px) {
             height: 58px;
             font-size: 16px;
+            width: 100%;
           }
         }
       }

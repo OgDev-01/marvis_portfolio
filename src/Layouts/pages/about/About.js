@@ -26,6 +26,7 @@ export default function About() {
         animate='visible'
         initial='hidden'
         exit='exit'
+        id='about'
         className='about-wrapper'>
         <div className='name-head'>
           <h1>
