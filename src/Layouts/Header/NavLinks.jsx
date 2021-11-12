@@ -48,7 +48,7 @@ export default function NavLinks({ navBar, setNavBar }) {
                   <div className='social-links'>
                     <a
                       onClick={handleClose}
-                      href=' https://www.behance.net/MarvisIghedosa'
+                      href='https://www.linkedin.com/in/marvisdosa/'
                       target='_blank'
                       rel='noopener'
                       className='s-link'>
@@ -103,10 +103,12 @@ export default function NavLinks({ navBar, setNavBar }) {
                       route='/project'
                       cssclass='m-link'
                     />
-                    <a onClick={handleClose} href='#about' className='m-link'>
-                      About
-                    </a>
-
+                    <Links
+                      handleClose={handleClose}
+                      name={"About"}
+                      route='/about'
+                      cssclass='m-link'
+                    />
                     <Links
                       handleClose={handleClose}
                       name={"Contacts"}
