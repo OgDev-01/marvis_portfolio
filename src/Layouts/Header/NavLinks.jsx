@@ -12,7 +12,7 @@ const menuVariant = {
   visible: {
     opacity: 1,
     x: 0,
-    transition: { duration: 1, type: "tween", stiffness: 90 },
+    transition: { duration: 0.5, type: "tween", stiffness: 90 },
   },
   exit: {
     opacity: 0,
@@ -100,7 +100,7 @@ export default function NavLinks({ navBar, setNavBar }) {
                     <Links
                       handleClose={handleClose}
                       name={"Work"}
-                      route='/project'
+                      route='/projects'
                       cssclass='m-link'
                     />
                     <Links

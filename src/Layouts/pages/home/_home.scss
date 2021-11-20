@@ -48,7 +48,7 @@
   }
   .description {
     width: 60%;
-
+    overflow: hidden;
     @media screen and(max-width: 768px) {
       width: 90%;
       margin-top: 20px;
@@ -57,6 +57,7 @@
     p {
       font-size: $pd;
       color: #c1c1c1;
+      overflow: hidden;
 
       @media screen and(max-width: 768px) {
         font-size: $pt;

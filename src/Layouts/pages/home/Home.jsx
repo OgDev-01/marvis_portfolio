@@ -4,10 +4,9 @@ import Landed from "./Landed"
 import MidSection from "./MidSection"
 import ScrollText from "./ScrollText"
 import SelectedWorks from "./SelectedWorks"
-// import LocomotiveScroll from "locomotive-scroll"
-// import "locomotive-scroll/src/locomotive-scroll.scss"
 import { motion } from "framer-motion"
-import useLocoScroll from "../../../context/useLocoScroll"
+// import useLocoScroll from "../../../context/useLocoScroll"
+import Loader from "../../../Components/Loader"
 
 // Variants
 const homeVariant = {
@@ -16,7 +15,7 @@ const homeVariant = {
   },
   visible: {
     opacity: 1,
-    transition: { duration: 2, when: "beforeChildren" },
+    transition: { duration: 1, when: "beforeChildren" },
   },
   exit: {
     opacity: 0,
@@ -33,6 +32,7 @@ export default function Home({ navBar }) {
         animate='visible'
         initial='hidden'
         exit='exit'>
+        {/* <Loader /> */}
         <Landed />
         <MidSection />
         <ScrollText />

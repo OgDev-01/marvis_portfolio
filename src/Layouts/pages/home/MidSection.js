@@ -5,7 +5,7 @@ export default function MidSection() {
     <>
       <div className='midsection' data-scroll>
         <div className='bio-img'>
-          <div className='img-c'>
+          <div className='img-c' id='me'>
             <img src={marvisImage} alt='marvis' />
           </div>
         </div>

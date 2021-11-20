@@ -37,7 +37,7 @@
       height: 400px;
     }
     @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
-      height: 240px;
+      height: 320px;
       max-width: 375px;
       margin: 0 auto;
     }
@@ -175,7 +175,7 @@
       height: 350px;
     }
     @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
-      height: 200px;
+      height: 320px;
       max-width: 314px;
     }
 
@@ -358,20 +358,33 @@
     }
     h2 {
       font-size: 65px;
-      width: 60%;
+      width: 80%;
+      margin: 0 auto;
+      text-align: center;
       @media screen and(max-width: 768px) {
         font-size: $h2d;
         width: 100%;
       }
       @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
         font-size: 34px;
+        // text-align: center;
+      }
+    }
+    p {
+      text-align: center;
+      font-size: $pt;
+      line-height: 22px;
+      width: 80%;
+      // background-color: $gray;
+      margin: 20px auto;
+      @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
       }
     }
   }
 
   .map {
     height: 700px;
-    width: 85%;
+    width: 100%;
     background-color: $white;
     margin: 0 auto;
 
@@ -379,7 +392,8 @@
       height: 400px;
     }
     @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
-      height: 200px;
+      height: 320px;
+      max-width: 375px;
     }
   }
 
@@ -513,12 +527,14 @@
         font-size: 34px;
       }
       p {
+        width: 65%;
         font-size: $pd;
         margin-top: 40px;
         line-height: 32px;
         @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
           font-size: $pm;
           line-height: 160%;
+          width: 100%;
         }
       }
     }
@@ -662,7 +678,7 @@
       height: 450px;
     }
     @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
-      height: 268px;
+      height: 320px;
       max-width: 375px;
       margin: 150px auto;
     }
@@ -874,9 +890,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      .span {
-        color: $white;
-      }
+      cursor: pointer;
 
       @media screen and(max-width: 768px) {
         font-size: 75px;
@@ -887,6 +901,7 @@
 
       .next-arrow {
         width: 100px;
+        cursor: pointer;
       }
       .prev {
         transform: rotate(180deg);

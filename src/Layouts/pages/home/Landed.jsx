@@ -38,12 +38,10 @@ const captionVariant = {
     transition: { duration: 0.8 },
   },
 }
-// const descriptionVariant = {
-//   hidden: {
-//     opacity: 0,
-//     y: 150,
-//   },
-// }
+
+const scrollToTarget = () => {
+  document.getElementById("me").scrollIntoView()
+}
 export default function Landed() {
   return (
     <>
@@ -75,7 +73,8 @@ export default function Landed() {
           <motion.div
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 1, yoyo: Infinity }}
-            className='circle'>
+            className='circle'
+            onClick={scrollToTarget}>
             <img className='down-arrow' src='arrow.svg' alt='' />
           </motion.div>
         </div>

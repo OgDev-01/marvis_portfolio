@@ -4,7 +4,6 @@ import { Link } from "react-router-dom"
 export default function NavBar({ navBar, setNavBar }) {
   const handleToggle = () => {
     setNavBar(true)
-
     document.body.style.overflow = "hidden"
     document.body.style.touchAction = "none"
   }

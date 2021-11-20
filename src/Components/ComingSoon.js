@@ -1,10 +1,11 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import vector from "../../src/images/coming-soon-vect.png"
+import Page from "./Page"
 
 export default function ComingSoon() {
   return (
-    <>
+    <Page title='coming soon'>
       <div className='coming-soon-wrap'>
         <div className='vector-img'>
           <img src={vector} alt='' />
@@ -20,6 +21,6 @@ export default function ComingSoon() {
           </Link>
         </div>
       </div>
-    </>
+    </Page>
   )
 }

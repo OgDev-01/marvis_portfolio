@@ -12,6 +12,7 @@ import ProjectThree from "./Layouts/pages/works/ProjectThree"
 import ProjectTwo from "./Layouts/pages/works/ProjectTwo"
 import ComingSoon from "./Components/ComingSoon"
 import { AnimatePresence } from "framer-motion"
+import useFetch from "./hooks/useFetch"
 // import useLocoScroll from "./context/useLocoScroll"
 
 function App() {
@@ -33,16 +34,16 @@ function App() {
             <Route path='/about'>
               <About navBar={navBar} />
             </Route>
-            <Route path='/project'>
+            <Route path='/projects'>
               <Projects navBar={navBar} />
             </Route>
-            <Route path='/jorge-investment'>
-              <ProjectOne navBar={navBar} />
+             <Route path='/project/jorge-investment'>
+               <ProjectOne navBar={navBar} />
             </Route>
-            <Route path='/bella-food'>
+            <Route path='/project/bella-food'>
               <ProjectTwo navBar={navBar} />
             </Route>
-            <Route path='/redxam'>
+            <Route path='/project/redxam'>
               <ProjectThree navBar={navBar} />
             </Route>
             <Route path='/coming-soon'>
